@@ -15,6 +15,7 @@
 		CA4378391E6CC41600E1D345 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4378381E6CC41600E1D345 /* User.swift */; };
 		CA43783B1E6CC52100E1D345 /* UserInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA43783A1E6CC52100E1D345 /* UserInteractor.swift */; };
 		CA43783D1E6CC7B300E1D345 /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA43783C1E6CC7B300E1D345 /* UserPresenter.swift */; };
+		CACFE4151E7F435500EE7EE7 /* UserTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFE4141E7F435500EE7EE7 /* UserTableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		CA4378381E6CC41600E1D345 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CA43783A1E6CC52100E1D345 /* UserInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractor.swift; sourceTree = "<group>"; };
 		CA43783C1E6CC7B300E1D345 /* UserPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
+		CACFE4141E7F435500EE7EE7 /* UserTableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				CA4378381E6CC41600E1D345 /* User.swift */,
 				CA43783A1E6CC52100E1D345 /* UserInteractor.swift */,
 				CA43783C1E6CC7B300E1D345 /* UserPresenter.swift */,
+				CACFE4141E7F435500EE7EE7 /* UserTableViewDataSource.swift */,
 			);
 			path = "IOS-Hi";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				CA4378271E6CC24A00E1D345 /* AppDelegate.swift in Sources */,
 				CA43783D1E6CC7B300E1D345 /* UserPresenter.swift in Sources */,
 				CA4378391E6CC41600E1D345 /* User.swift in Sources */,
+				CACFE4151E7F435500EE7EE7 /* UserTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UserView, UITableViewDataSource {
+class ViewController: UIViewController, UserView {
 
     
     
@@ -18,6 +18,7 @@ class ViewController: UIViewController, UserView, UITableViewDataSource {
     
     fileprivate let presenter = UserPresenter(userInteractor: UserInteractor())
     fileprivate var users = [User]()
+    fileprivate let userUITableViewDS = UserTableViewDataSource()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,18 +34,6 @@ class ViewController: UIViewController, UserView, UITableViewDataSource {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         presenter.viewWillAppear()
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.users.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "UserCell")
-        let user = self.users[indexPath.row]
-        cell.textLabel?.text = user.name
-        cell.detailTextLabel?.text = user.lastName
-        return cell
     }
     
     func showLoading() {
@@ -68,11 +57,12 @@ class ViewController: UIViewController, UserView, UITableViewDataSource {
         activityIndicator?.isHidden = true
         userTableView?.isHidden = false
         emptyCaseLabel?.isHidden = true
+        userUITableViewDS.setUsers(self.users)
         userTableView?.reloadData()
     }
     
     fileprivate func configurateTableView() {
-        userTableView?.dataSource = self
+        userTableView?.dataSource = userUITableViewDS
     }
     
     fileprivate func configureActivityIndicatorView() {

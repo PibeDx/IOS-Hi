@@ -15,7 +15,8 @@ class UserInteractor {
         self.users =
             [
                 User(name:"Juan", lastName: "Perez", age:18),
-                User(name:"José", lastName: "Cuentas", age:23)
+                User(name:"José", lastName: "Cuentas", age:23),
+                User(name:"Pablo", lastName: "Nuñez", age:23)
             ]
     }
     
